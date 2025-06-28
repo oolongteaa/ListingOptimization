@@ -43,7 +43,7 @@ def extract_vrbo_listing_info(data):
 
 def main():
     # Example usage:
-    with open("vrbo_details_data.json", encoding="utf-8") as f:
+    with open("../vrbo_details_data.json", encoding="utf-8") as f:
         data = json.load(f)
 
     parsed = extract_vrbo_listing_info(data)

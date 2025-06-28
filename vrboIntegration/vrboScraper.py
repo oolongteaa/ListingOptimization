@@ -1,7 +1,6 @@
 from playwright.sync_api import sync_playwright
 import json
-import re
-import vrboParser
+
 
 def fetch_vrbo_full_data_combined(url: str):
     with sync_playwright() as p:
@@ -92,7 +91,7 @@ def main():
     print("\nFetching structured text + images...")
     data = fetch_vrbo_full_data_combined(listing_url)
 
-    output_path = "vrbo_details_data.json"
+    output_path = "../vrbo_details_data.json"
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
