@@ -1,5 +1,5 @@
 import pyairbnb
-import parser
+import airbnbParser
 import json
 import poeIntegration
 
@@ -30,8 +30,8 @@ def main():
     print(f"Raw listing data saved to {json_file_path}")
 
     print("Parsing listing details...")
-    parsed_data = parser.parse_listing_details(json_file_path)
-    parser.write_output_to_file(parsed_data)
+    parsed_data = airbnbParser.parse_listing_details(json_file_path)
+    airbnbParser.write_output_to_file(parsed_data)
 
     print("Parsed data written to output file.\nDone!")
 
