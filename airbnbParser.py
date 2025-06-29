@@ -82,7 +82,7 @@ def write_output_to_file(output_data, output_file_path="output.txt"):
                     file.write(f"     Date: {review['date']}\n")
                     file.write(f"     Review: {review['text']}\n")
             else:
-                file.write("  No reviews available.\n")
+               file.write("  No reviews available.\n")
 
         print(f"Output successfully written to '{output_file_path}'")
     except Exception as e:

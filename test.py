@@ -39,8 +39,8 @@ def main():
 
     poeIntegration.run_ota_analysis(
         api_key=POE_API_KEY,
-        file_paths=["details_data.json",
-                   "resources/Listing Description.pdf"], #"resources/airbnb-ebook_newbranding_a2.pdf" "resources/22 Quick and Easy Ways to Optimize Your Short-Term Rental Listing in 2024.pdf"
+        file_paths=["output.txt",
+                   "resources/Listing Description.pdf",], #"resources/airbnb-ebook_newbranding_a2.pdf" "resources/22 Quick and Easy Ways to Optimize Your Short-Term Rental Listing in 2024.pdf"
         output_file="ota_grades.txt"
     )
 
