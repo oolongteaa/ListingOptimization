@@ -92,11 +92,11 @@ def write_output_to_file(output_data, output_file_path="output.txt"):
 # Example usage
 if __name__ == "__main__":
     # Path to your JSON file
-    json_file_path = "details_data.json"
+    json_file_path = "../details_data.json"
 
     # Parse the JSON file
     listing_details = parse_listing_details(json_file_path)
 
     # Write the output to a file if parsing was successful
     if listing_details:
-        write_output_to_file(listing_details, "output.txt")
+        write_output_to_file(listing_details, "../output.txt")
