@@ -1,7 +1,7 @@
 from airbnbIntegration import airbnbParser, airbnbScraper
 import poeIntegration
 
-POE_API_KEY = "wcK0nNN_liw1Q1YLfa7GnIjGY-h1mv_0ORnr3c7S6Ms"
+POE_API_KEY = "your poe api key here"
 
 def main():
     print("==Listing Optimization App==\n")
